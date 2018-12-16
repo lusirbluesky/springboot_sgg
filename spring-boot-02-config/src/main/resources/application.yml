@@ -1,0 +1,37 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8086
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8087
+spring:
+  profiles: prod
+
+#指定启动的命令行参数
+#--spring.profiles.active=dev
+#java -jar xxxx.jar --spring.profiles.avtive=dev
+#指定启动的虚拟机参数
+#-Dspring.profiles.active=dev
+---
+
+#person:
+#  #lastName: 小三
+#  age: 18
+#  boss: false
+#  birth: 2018/12/12
+#  maps: {k1: v1,k2: 12}
+#  lists:
+#    - 斗罗大陆
+#    - 星辰变
+#  dog:
+#    name: 皮皮
+#    age: 18
+#  last-name: 唐三
